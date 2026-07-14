@@ -1,0 +1,21 @@
+{
+  "name": "backend_intro",
+  "version": "1.0.0",
+  "description": "intro to backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuriCendejas/backend_intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YuriCendejas/backend_intro/issues"
+  },
+  "homepage": "https://github.com/YuriCendejas/backend_intro#readme"
+}
