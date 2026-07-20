@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "intro to backend",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +14,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/YuriCendejas/backend_intro/issues"
   },
-  "homepage": "https://github.com/YuriCendejas/backend_intro#readme"
+  "homepage": "https://github.com/YuriCendejas/backend_intro#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.4"
+  }
 }
