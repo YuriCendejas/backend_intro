@@ -1,3 +1,4 @@
 # backend_intro
 
-intro to backend for me to practice
+intro to backend .
+initial server setup . database connection and basic APIs for user authentication. including hashing passwords wit h bcrypt. as well as using Postman to test my server requests and make sure theyre working correctly .
