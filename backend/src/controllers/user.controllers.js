@@ -1,4 +1,4 @@
- import {User} from "../models/user.model.js" 
+ import {User} from "../models/user.model.js";
 
  const registerUser = async (req,res) => {
     try { const {username,password,email} =req.body;
@@ -8,21 +8,23 @@
     } // making sure everything is written or else an alert of " all fields are required" . 400 = client side error
 
 
-    const exists = await User.findOne({email: email.toLowerCase() });
+    const exists = await User.findOne({
+        $or: [ {email: email.toLowerCase() }, // $or bc try to find if anything matches the email or username 
+        {username: username.toLowerCase()}
+    ] });
     if (exists) {
         return res.status(400).json({message:"hmmm, looks like that user already exists"});
-    }// user already exists . 400 = client server error
+    }// user already exists . 400 = client side error
 
-    const user = await User.create({
+     await User.create({
         username,
         password,
         email
     });
-
-    return res.status(201).json({ // 201 = means "ok"
+    return res.status(201).json({ // 201 = means "ok"/ successful request
         message: " User created successfully",
-    });
-
+    }); 
+     }
     catch (error){
     console.error(error);
     return res.status(500).json({ // 500 = server side error
@@ -30,5 +32,5 @@
     });
     }
     
- };
-export {registerUser};
+    };
+    export {registerUser};
