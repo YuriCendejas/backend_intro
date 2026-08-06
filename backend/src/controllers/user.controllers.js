@@ -1,4 +1,5 @@
  import {User} from "../models/user.model.js";
+import jwt from "jsonwebtoken";
 
  const registerUser = async (req,res) => {
     try { const {username,password,email} =req.body;
@@ -35,27 +36,55 @@
     };
 
     const loginUser = async (req,res) => {
-        try { const {email,password} = req.body;
+        try { 
+            //checking if the user already exists
+        const {email,password} = req.body;
+
+        if (!email || !password){ // that way it dont come back as undefined or error
+            return res.status(400).json({
+                message:"Email and password are required"
+            });
+        }
+
 const user = await User.findOne({
     email : email.toLowerCase()
 });
-if (!user) {return res.status(400).json({
+if (!user) {return res.status(400).json({ // if you couldnt find the user
     message: "Invalid email or password"
 });
 }
-//compare passwords -Login
+//compare passwords for Login
 const isMatch = await user.comparePassword(password);
+
  if (!isMatch) { return res.status(400).json
-    ({ message: "Invalid email or password"});
+    ({ message: "Invalid email or password"}
+
+    );
 }
+const token = jwt.sign({ // creates a signed token contains the user ID and email
+
+    id: user._id,
+    email: user.email,
+},
+    process.env.JWT_SECRET,{
+        expiresIn:process.env.JWT_EXPIRES_IN,
+    }
+);
+
 
  return res.status(200).json({
-    message: "Login successful"
+    message: "Login successful",
+    token,
    
  });
+ 
+        } 
+        catch (error) {
+            console.error(error)
+            return res.status(500).json
+            ({message : "Internal server error"
 
-        } catch (error) {res.status(500).json
-            ({message : "Internal server error"});
+            });
             
         }
     };
@@ -66,16 +95,17 @@ const isMatch = await user.comparePassword(password);
         const user = await User.findOne({
             email });
 
-             if (!user) return res.status(404).json({
+   if (!user) return res.status(404).json({
                 message: "User not found"
-             });
+  });
 
-             res.status(200).json({
+            return res.status(200).json({
                 message: "Logout successful"
-             });
+   });
             
-        } catch (error) { res.status(500).json({
-            message:"Internal server error",error
+        } catch (error) { console.error(error); // for it wont send the error to the client
+            return res.status(500).json({
+            message:"Internal server error",
         });
             
         }
