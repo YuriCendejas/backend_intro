@@ -3,7 +3,7 @@ import userRoutes from "./routes/user.route.js";
 
 const app = express(); // creates express app
 
-app.use(express.json()); 
+app.use(express.json()); // content-type : application/json on postmon
 
 app.get("/",(req,res) => { res.send("Server is working!");}); // or else it'll say cannot get/ on the "curl" test
 

@@ -91,7 +91,7 @@ const token = jwt.sign({ // creates a signed token contains the user ID and emai
 
     const logoutUser = async (req,res) => {
         try { 
-            const {email} =req.body;
+            const {email} =req.body; // same as " {email : email}" key and variable are the same
         const user = await User.findOne({
             email });
 
