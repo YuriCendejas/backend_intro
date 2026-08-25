@@ -10,4 +10,7 @@ initial server setup . database connection and basic APIs for user authenticatio
 <img width="1412" height="791" alt="Screenshot 2026-08-16 at 12 05 12 AM" src="https://github.com/user-attachments/assets/24ef1d77-57c8-40f8-a5b0-0d083f407935" />
 <img width="1440" height="745" alt="Screenshot 2026-08-23 at 10 38 56 PM" src="https://github.com/user-attachments/assets/5a8be69e-dee2-48e5-ae77-417f3b4dd200" />
 
+<img width="1440" height="710" alt="Screenshot 2026-08-01 at 2 42 17 PM" src="https://github.com/user-attachments/assets/3b18fff7-77fe-4e78-928e-d34650dce233" />
+<img width="1440" height="764" alt="Screenshot 2026-07-30 at 9 43 09 PM" src="https://github.com/user-attachments/assets/0227ee16-10a6-4ea1-94b9-7a2cdc89a956" />
+<img width="1440" height="767" alt="Screenshot 2026-07-30 at 9 39 21 PM" src="https://github.com/user-attachments/assets/4bc64840-c26b-4c6c-a6b3-a15cba3f739d" />
 
