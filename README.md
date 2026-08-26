@@ -21,3 +21,15 @@ initial server setup . database connection and basic APIs for user authenticatio
 
 <img width="1440" height="710" alt="Screenshot 2026-08-01 at 2 42 17 PM" src="https://github.com/user-attachments/assets/da0ddabc-1d11-4d40-9cf9-2b190226b358" />
 <img width="1440" height="767" alt="Screenshot 2026-07-30 at 9 39 21 PM" src="https://github.com/user-attachments/assets/cbda58ec-7acb-4aa2-adb4-fbf0c8c2cdbf" />
+
+
+<img width="1440" height="800" alt="Screenshot 2026-08-25 at 9 28 46 PM" src="https://github.com/user-attachments/assets/17f3a7ee-a646-4d24-9ec3-a7ba1136c5bb" />
+
+<img width="1418" height="801" alt="Screenshot 2026-08-25 at 9 42 25 PM" src="https://github.com/user-attachments/assets/2f9d94a9-3618-431b-8b81-07d734700873" />
+
+<img width="1424" height="796" alt="Screenshot 2026-08-25 at 9 42 48 PM" src="https://github.com/user-attachments/assets/c347545a-ad55-4ef1-b3f7-07fbccfc86d7" />
+
+<img width="1418" height="801" alt="Screenshot 2026-08-25 at 9 42 25 PM" src="https://github.com/user-attachments/assets/2641a2d5-9900-4eb3-b0b7-e30fdc0a784a" />
+
+<img width="1440" height="798" alt="Screenshot 2026-08-25 at 9 52 17 PM" src="https://github.com/user-attachments/assets/af0ea7f6-4250-4dc4-8990-d535fa206259" />
+
