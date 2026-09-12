@@ -22,6 +22,6 @@ router.get("/",(req,res) => {
 router.post("/register", registerUser); // part of the /api/users for the Postmon url
 router.post("/login", loginUser);
 router.post("/logout", logoutUser);
-router.get(/profile/protect,getUserProfile); //new route
+router.get("/profile",protect,getUserProfile); //new route
 
 export default router;
