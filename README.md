@@ -39,4 +39,9 @@ initial server setup . database connection and basic APIs for user authenticatio
 
 with token <img width="1276" height="788" alt="Screenshot 2026-09-12 at 4 09 27 PM" src="https://github.com/user-attachments/assets/fb11844c-d5a3-434f-885c-748b6443d7ca" />
 
+JWT Bearer
+<img width="1034" height="806" alt="Screenshot 2026-09-20 at 2 09 17 PM" src="https://github.com/user-attachments/assets/9a9733ab-00a1-4ee2-802b-2f7d3ebf2f11" />
+
+
+
 
