@@ -13,7 +13,7 @@ if (!authHeader || !authHeader.startsWith("Bearer ")){
 return res.status(401).json({message:"no token provided"});
 // 401 bc its not authorized bc the client didnt prove who they were.
 }
-const token =authHeader.split("")[1];
+const token =authHeader.split(" ")[1];
 /*authHeader.split("")[1] basically is just saying cut the string at the space and
 give me the second part bc the index of the token would be 1 and "bearer" is index of 0*/
 
