@@ -19,9 +19,15 @@ const postSchema = new Schema (
             required:true, 
             trim: true,
         },
+        createdBy: {
+            type: Schema.Types.ObjectId, // Stores User's _Id
+            ref:"User", // tells mangoose this ID refers to a dcument in the "User" collection
+            required:true,
+    
+        },
     },
     {
         timestamps: true
     }
-)
+);
 export const Post = mongoose.model('Post',postSchema);
