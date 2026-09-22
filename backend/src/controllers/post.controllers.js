@@ -8,13 +8,13 @@ const createPost = async (req,res) => {
          return res.status(400).json({message: "All fields required!"});
          }
          // if the user types all 3 of what fields are required
-         const post = await Post.create({name,description,age}); // the capital P on Post is referring to mongoose Post.model.js variable
-
+         const post = await Post.create({name,description,age,createdBy:req.user.id,}); // the capital P on Post is referring to mongoose Post.model.js variable
+         // createdBy ties this post to whoever is logged in (from protect)
         return res.status(201).json({
             message:"Post created successfully",post
      });
         
-    } catch (error) { 
+    } catch(error) { 
         return res.status(500).json({
             message:" internal server error",error
         });
